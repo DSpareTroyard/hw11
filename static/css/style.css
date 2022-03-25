@@ -1,0 +1,14 @@
+body{
+    background-image:url("https://vignette.wikia.nocookie.net/psychopass/images/5/50/Wiki-background/revision/latest?cb=20181204222150");
+    color:#fff;
+}
+.content{
+    width:60%;
+    margin:auto;
+}
+a{
+    color:#fff;
+}
+a:visited{
+    color:#f00;
+}
