@@ -22,8 +22,20 @@ def page_part_two():
 
 @app.route('/candidate/<int:x>/')
 def page_card(x):
-    candidate = utils.get_candidate(x)
+    candidate = utils.get_candidate("candidates.json", x)
     return render_template('card.html', candidate=candidate)
+
+
+@app.route('/search/<candidate_name>/')
+def page_search(candidate_name):
+    candidates = utils.get_candidates_by_name("candidates.json", candidate_name)
+    return render_template('search.html', candidate_name=candidate_name, candidates=candidates)
+
+
+@app.route('/skill/<skill_name>')
+def page_skill(skill_name):
+    candidates = utils.get_candidates_by_skill("candidates.json", skill_name)
+    return render_template('skill.html', candidates=candidates, skill_name=skill_name)
 
 
 app.run()

@@ -6,6 +6,14 @@
 </head>
 <body>
 <h1>Все кандидаты</h1>
+<p>
+    <input type="text" id="search_by_name" placeholder="Поиск по имени"/>
+    <input type="button" value="Поиск" onclick="location.href='/search/'+search_by_name.value"/>
+</p>
+<p>
+    <input type="text" id="search_by_skill" placeholder="Поиск по навыкам"/>
+    <input type="button" value="Поиск" onclick="location.href='/skill/'+search_by_skill.value"/>
+</p>
 {% for candidate in candidates %}
 <p><a href="/candidate/{{candidate.id}}">{{candidate.name}}</a></p>
 {% endfor %}
