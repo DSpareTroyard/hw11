@@ -1,14 +1,28 @@
 body{
     background-image:url("https://vignette.wikia.nocookie.net/psychopass/images/5/50/Wiki-background/revision/latest?cb=20181204222150");
+    background-attachment: fixed;
     color:#fff;
+    font-size: 25px;
+    font-family: "Verdana";
 }
-.content{
-    width:60%;
-    margin:auto;
+.urobutcher{
+    position:fixed;
+    width:20%;
+}
+.urobutcher img{
+    width: 90%;
+    border: solid rgba(0,0,0,0) 0.1px;
+    border-radius: 15px;
+}
+aside{
+}
+main{
+    width: 60%;
+    margin: auto;
 }
 a{
-    color:#fff;
+    color: #fff;
 }
 a:visited{
-    color:#f00;
+    color: #f00;
 }
