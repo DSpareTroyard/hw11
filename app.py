@@ -32,7 +32,7 @@ def page_search(candidate_name):
     return render_template('search.html', candidate_name=candidate_name, candidates=candidates)
 
 
-@app.route('/skill/<skill_name>')
+@app.route('/skill/<skill_name>/')
 def page_skill(skill_name):
     candidates = utils.get_candidates_by_skill("candidates.json", skill_name)
     return render_template('skill.html', candidates=candidates, skill_name=skill_name)
